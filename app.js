@@ -1,7 +1,7 @@
 // Grab some stuff
 const section = document.querySelector("section");
 const playerLivesCount = document.querySelector("span");
-let playerLives = 16;
+let playerLives = 19;
 
 // Linnk text from html 
 playerLivesCount.textContent = playerLives
@@ -36,6 +36,18 @@ const getData = () => [
 	{imgSrc: "img_game/11_ver.jpeg", id: 22, name: "formula" },
 	{imgSrc: "img_game/12_1_beatles.jpeg", id: 23, name: "beatles" }, 
 	{imgSrc: "img_game/12_2_beatles.jpeg", id: 24, name: "beatles" },
+	{imgSrc: "img_game/77_hott.jpeg", id: 25, name: "hot" },
+	{imgSrc: "img_game/77_hotfire.jpeg", id: 26, name: "hot" },
+	{imgSrc: "img_game/45_bob.png", id: 27, name: "bob" },
+	{imgSrc: "img_game/45_nobob.jpeg", id: 28, name: "bob" },
+	{imgSrc: "img_game/33_macaroni.jpeg", id: 29, name: "food" }, 
+	{imgSrc: "img_game/33_dessert.jpeg", id: 30, name: "food" }, 
+	{imgSrc: "img_game/14_mateberlin.jpeg", id: 31, name: "mate" },
+	{imgSrc: "img_game/14_mateargentina.jpeg", id: 32, name: "mate" },
+	{imgSrc: "img_game/35_noshoes.jpeg", id: 33, name: "omg" },
+	{imgSrc: "img_game/35_shoes.jpeg", id: 34, name: "omg" },
+	{imgSrc: "img_game/69dondon.jpeg", id: 35, name: "don" }, 
+	{imgSrc: "img_game/0888888.jpeg", id: 36, name: "don" },
 
 ];
 
@@ -128,7 +140,7 @@ const checkCards = (e) => {
 //how to know if we won the game?
 //run a check 
 
-if(toggleCard.length === 24){
+if(toggleCard.length === 36){
 	restart(" You won!(ᴖᴥᴖ)")
 }
 
@@ -156,7 +168,7 @@ const restart  = (text) => {
 			section.style.pointerEvents = "all";
 		}, 1000);
 	});
-	playerLives = 16;
+	playerLives = 19;
 //update the ui again
 	playerLivesCount.textContent = playerLives;
 	setTimeout(() => window.alert(text), 100);

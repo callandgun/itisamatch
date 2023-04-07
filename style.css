@@ -7,6 +7,19 @@
   #selected-id {
 	color: rgba(194, 75, 215, 0.846);
   }
+
+  h1 {
+	font-size: 5rem; /* changes font size */
+	font-style: italic; /* changes font style */
+	text-align: center; /* changes text alignment */
+	color: rgba(112, 72, 152, 0.837);
+  }
+  
+  p {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: rgba(112, 72, 152, 0.737);
+  }
   
   body {
 	height: 100vh;
